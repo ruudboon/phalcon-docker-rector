@@ -28,3 +28,4 @@ RUN apk update && apk add composer
 RUN composer global require rector/rector
 WORKDIR /project
 ENTRYPOINT ["/root/.composer/vendor/bin/rector"]
+CMD ["process", "--set",  "phalcon40", "--dry-run"]
