@@ -31,5 +31,5 @@ Need to check if your interfaces align and you are 7.4 compatible?
 
 Run:
 ```
-docker run -v $(pwd):/project ruudboon/phalcon-rector:php74-v4 process --set phalcon40
+docker run -v $(pwd):/project ruudboon/phalcon-rector:php74-v4 process --set php74
 ```
