@@ -1,7 +1,5 @@
 #
-# NOTE: THIS DOCKERFILE IS GENERATED VIA "update.sh"
-#
-# PLEASE DO NOT EDIT IT DIRECTLY.
+# Credits: https://github.com/MilesChou/docker-phalcon
 #
 FROM php:7.3-alpine
 
