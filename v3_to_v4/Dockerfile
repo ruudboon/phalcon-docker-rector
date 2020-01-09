@@ -5,8 +5,7 @@ FROM php:7.3-alpine
 
 LABEL maintainer="Ruud Boon <github.com/ruudboon>"
 
-ARG PSR_VERSION=0.7.0
-ARG PHALCON_VERSION=4.0.0
+ARG PHALCON_VERSION=3.4.5
 ARG PHALCON_EXT_PATH=php7/64bits
 
 RUN set -xe && \

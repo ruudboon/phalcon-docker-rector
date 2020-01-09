@@ -10,13 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Build container v3_to_v4
-        uses: elgohr/Publish-Docker-Github-Action@master
-        with:
-          name: ruudboon/phalcon-rector:php73-v3_to_v4
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          dockerfile: v3_to_v4/Dockerfile
       - name: Build container php7.4 with Phalcon 4
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
@@ -24,3 +17,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           dockerfile: php74-v4/Dockerfile
+      - name: Build container v3_to_v4
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: ruudboon/phalcon-rector:php73-v3_to_v4
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          dockerfile: v3_to_v4/Dockerfile
